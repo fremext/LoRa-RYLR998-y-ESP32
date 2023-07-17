@@ -6,8 +6,7 @@ int led = 22; //Led conectado al pin D22 del esp32
 
 String textoEntrada; //Almacena los datos recibidos del emisor 
 
- ()
-{
+void setup(){
 
   pinMode(led,OUTPUT); //Modo de salida el pin D22 del led
   Serial2.begin(115200,SERIAL_8N1, 16,17); //puerto serie2 (pin 16RXD,17TXD UART del esp32) 
